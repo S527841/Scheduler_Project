@@ -13,6 +13,8 @@
 		0F22E1B91E8407D1004B722A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F22E1B71E8407D1004B722A /* LaunchScreen.storyboard */; };
 		46BD928A2241833C004C484F /* ProfessorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD92892241833C004C484F /* ProfessorTableViewController.swift */; };
 		46BD928C2241868B004C484F /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD928B2241868B004C484F /* ScheduleTableViewController.swift */; };
+		6DCD188622569FA400C0AC95 /* MajorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCD188522569FA400C0AC95 /* MajorTableViewController.swift */; };
+		6DCD18882256A06800C0AC95 /* Professors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCD18872256A06800C0AC95 /* Professors.swift */; };
 		6DE77A64223840B600EABB21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DE77A63223840B600EABB21 /* Main.storyboard */; };
 		6DE77A692238427F00EABB21 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE77A682238427F00EABB21 /* RegisterController.swift */; };
 		7B6108D8A058DA36A4704766 /* Pods_Bearcat_Scheduler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 507B21C59DDF72202025991B /* Pods_Bearcat_Scheduler.framework */; };
@@ -30,6 +32,8 @@
 		46BD92892241833C004C484F /* ProfessorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessorTableViewController.swift; sourceTree = "<group>"; };
 		46BD928B2241868B004C484F /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewController.swift; sourceTree = "<group>"; };
 		507B21C59DDF72202025991B /* Pods_Bearcat_Scheduler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bearcat_Scheduler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DCD188522569FA400C0AC95 /* MajorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorTableViewController.swift; sourceTree = "<group>"; };
+		6DCD18872256A06800C0AC95 /* Professors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Professors.swift; sourceTree = "<group>"; };
 		6DE77A63223840B600EABB21 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		6DE77A682238427F00EABB21 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +88,8 @@
 				6DE77A682238427F00EABB21 /* RegisterController.swift */,
 				46BD92892241833C004C484F /* ProfessorTableViewController.swift */,
 				46BD928B2241868B004C484F /* ScheduleTableViewController.swift */,
+				6DCD188522569FA400C0AC95 /* MajorTableViewController.swift */,
+				6DCD18872256A06800C0AC95 /* Professors.swift */,
 			);
 			path = Bearcat_Scheduler;
 			sourceTree = "<group>";
@@ -222,7 +228,9 @@
 				0F22E1B11E8407D1004B722A /* LoginController.swift in Sources */,
 				46BD928C2241868B004C484F /* ScheduleTableViewController.swift in Sources */,
 				6DE77A692238427F00EABB21 /* RegisterController.swift in Sources */,
+				6DCD188622569FA400C0AC95 /* MajorTableViewController.swift in Sources */,
 				0F22E1AF1E8407D1004B722A /* AppDelegate.swift in Sources */,
+				6DCD18882256A06800C0AC95 /* Professors.swift in Sources */,
 				46BD928A2241833C004C484F /* ProfessorTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
