@@ -43,7 +43,7 @@
                                 <rect key="frame" x="78" y="301" width="258" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bearcat Scheduler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rye-gH-83v">
                                 <rect key="frame" x="120" y="54" width="175" height="27"/>
@@ -158,7 +158,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pZc-fe-kwm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1449" y="150"/>
+            <point key="canvasLocation" x="1448" y="150"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Kiq-oZ-L9X">
@@ -206,7 +206,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YVR-Au-LIP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2225" y="150"/>
+            <point key="canvasLocation" x="2287" y="150"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="5IU-OW-twX">
@@ -299,7 +299,7 @@
                                 <rect key="frame" x="78" y="301" width="258" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4SF-JP-cnP">
                                 <rect key="frame" x="78" y="197" width="258" height="30"/>
@@ -322,7 +322,7 @@
                                 <rect key="frame" x="78" y="407" width="258" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.92679323186528495" green="0.92679323186528495" blue="0.92679323186528495" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -366,6 +366,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="oJh-YA-aGm"/>
+        <segue reference="P5z-5S-T0m"/>
     </inferredMetricsTieBreakers>
 </document>
