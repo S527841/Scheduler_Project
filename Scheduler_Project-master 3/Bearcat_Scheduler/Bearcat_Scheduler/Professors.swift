@@ -11,6 +11,8 @@ class Schedule {
     
     var dayOfWeek:String
     var calendarDay:String
+    var days:[Day] = []
+
     
     init(dayOfWeek:String, calendarDay:String){
         self.dayOfWeek = dayOfWeek
@@ -18,10 +20,24 @@ class Schedule {
     }
 }
 
+class Day {
+    
+    var course:String
+    var time:String
+    var location:String
+    
+    init(course:String, time:String, location:String){
+        self.course = course
+        self.time = time
+        self.location = location
+    }
+}
+
 class Professor {
     
     var name:String
     var department:String
+    var schedules:[Schedule] = []
     
     init(name:String, department:String){
         self.name = name
