@@ -232,7 +232,7 @@
             </objects>
             <point key="canvasLocation" x="545" y="150"/>
         </scene>
-        <!--Day-->
+        <!--Schedule-->
         <scene sceneID="dVM-kp-r4K">
             <objects>
                 <tableViewController id="vbO-ty-EFt" customClass="ScheduleTableViewController" customModule="NW_Scheduler" customModuleProvider="target" sceneMemberID="viewController">
@@ -274,7 +274,7 @@
                             <outlet property="delegate" destination="vbO-ty-EFt" id="6A1-xg-1ZF"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Day" id="y1m-df-1QU">
+                    <navigationItem key="navigationItem" title="Schedule" id="y1m-df-1QU">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Gdr-5C-HVj">
                             <connections>
                                 <segue destination="Tju-vV-9l7" kind="presentation" identifier="newEventSegue" id="UJl-yN-50I"/>
@@ -303,7 +303,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="barTintColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
-                                    <navigationItem title="Title" id="S2W-zW-Z3u"/>
+                                    <navigationItem title="Events" id="S2W-zW-Z3u"/>
                                 </items>
                             </navigationBar>
                         </subviews>
