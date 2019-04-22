@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04556799225FDE5E0047D84A /* NewScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04556798225FDE5E0047D84A /* NewScheduleViewController.swift */; };
+		04556799225FDE5E0047D84A /* NewDailyScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04556798225FDE5E0047D84A /* NewDailyScheduleViewController.swift */; };
 		04935E25225FBA75005AE63E /* Professors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04935E24225FBA75005AE63E /* Professors.swift */; };
 		04935E2A225FC0E7005AE63E /* NewProfessorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04935E29225FC0E7005AE63E /* NewProfessorViewController.swift */; };
 		04F0853922667CEF003D77A6 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0853822667CEF003D77A6 /* ScheduleViewController.swift */; };
@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04556798225FDE5E0047D84A /* NewScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScheduleViewController.swift; sourceTree = "<group>"; };
+		04556798225FDE5E0047D84A /* NewDailyScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDailyScheduleViewController.swift; sourceTree = "<group>"; };
 		04935E24225FBA75005AE63E /* Professors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Professors.swift; sourceTree = "<group>"; };
 		04935E29225FC0E7005AE63E /* NewProfessorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProfessorViewController.swift; sourceTree = "<group>"; };
 		04F0853822667CEF003D77A6 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 				0F22E1B71E8407D1004B722A /* LaunchScreen.storyboard */,
 				0F22E1BA1E8407D1004B722A /* Info.plist */,
 				6DE77A682238427F00EABB21 /* RegisterController.swift */,
-				04556798225FDE5E0047D84A /* NewScheduleViewController.swift */,
+				04556798225FDE5E0047D84A /* NewDailyScheduleViewController.swift */,
 				04935E29225FC0E7005AE63E /* NewProfessorViewController.swift */,
 				46BD92892241833C004C484F /* ProfessorTableViewController.swift */,
 				04935E24225FBA75005AE63E /* Professors.swift */,
@@ -151,6 +151,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -231,7 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04556799225FDE5E0047D84A /* NewScheduleViewController.swift in Sources */,
+				04556799225FDE5E0047D84A /* NewDailyScheduleViewController.swift in Sources */,
 				0F22E1B11E8407D1004B722A /* LoginController.swift in Sources */,
 				46BD928C2241868B004C484F /* ScheduleTableViewController.swift in Sources */,
 				04F0853922667CEF003D77A6 /* ScheduleViewController.swift in Sources */,

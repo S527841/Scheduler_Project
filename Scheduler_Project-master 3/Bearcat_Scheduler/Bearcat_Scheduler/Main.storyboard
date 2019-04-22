@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -39,7 +39,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sVx-9T-4EW">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="chasem1234@gmail.com" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sVx-9T-4EW">
                                 <rect key="frame" x="78" y="201" width="258" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="VEf-0K-dyG"/>
@@ -48,7 +48,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gb2-nl-ypV">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="butt" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gb2-nl-ypV">
                                 <rect key="frame" x="78" y="281" width="258" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="dii-bt-aLm"/>
@@ -386,10 +386,10 @@
             </objects>
             <point key="canvasLocation" x="1448" y="891"/>
         </scene>
-        <!--New Schedule View Controller-->
+        <!--New Daily Schedule View Controller-->
         <scene sceneID="GAd-Gp-m1J">
             <objects>
-                <viewController id="Tju-vV-9l7" customClass="NewScheduleViewController" customModule="NW_Scheduler" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Tju-vV-9l7" customClass="NewDailyScheduleViewController" customModule="NW_Scheduler" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uDr-ej-ZrT"/>
                         <viewControllerLayoutGuide type="bottom" id="NiR-Rj-7z1"/>
@@ -529,11 +529,11 @@
                         <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="calendarDate" destination="dDF-cD-qgi" id="c4m-yR-mIZ"/>
-                        <outlet property="course" destination="Mhl-pc-POT" id="vpj-l9-MCB"/>
-                        <outlet property="dayOfWeek" destination="aev-WO-Hib" id="Zr3-O8-tpM"/>
-                        <outlet property="location" destination="D5Q-ql-L6c" id="nDI-EZ-sfj"/>
-                        <outlet property="time" destination="fFL-ot-915" id="wes-23-mJ9"/>
+                        <outlet property="calendarDateTF" destination="dDF-cD-qgi" id="c4m-yR-mIZ"/>
+                        <outlet property="courseTF" destination="Mhl-pc-POT" id="vpj-l9-MCB"/>
+                        <outlet property="dayOfWeekTF" destination="aev-WO-Hib" id="Zr3-O8-tpM"/>
+                        <outlet property="locationTF" destination="D5Q-ql-L6c" id="nDI-EZ-sfj"/>
+                        <outlet property="timeTF" destination="fFL-ot-915" id="wes-23-mJ9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tCA-fo-sZ3" userLabel="First Responder" sceneMemberID="firstResponder"/>

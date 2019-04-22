@@ -7,27 +7,30 @@
 
 import Foundation
 
-class Schedule {
+class DailySchedule {
     
-    var dayOfWeek:String
-    var calendarDay:String
-    var days:[Day] = []
+    var dayOfWeek:String!
+    var calendarDay:Int!
+    var courses:[Course] = []
 
-    
-    init(dayOfWeek:String, calendarDay:String){
+    init(dayOfWeek:String, calendarDay:Int){
         self.dayOfWeek = dayOfWeek
         self.calendarDay = calendarDay
     }
+    
+    func addCourse(course:Course){
+        courses.append(course)
+    }
 }
 
-class Day {
+class Course {
     
-    var course:String
+    var courseName:String
     var time:String
     var location:String
     
     init(course:String, time:String, location:String){
-        self.course = course
+        self.courseName = course
         self.time = time
         self.location = location
     }
@@ -37,17 +40,14 @@ class Professor {
     
     var name:String
     var department:String
-    var schedules:[Schedule] = []
+    var schedules:[DailySchedule] = []
     
     init(name:String, department:String){
         self.name = name
         self.department = department
     }
     
-    func addSchedule(dayOfWeek:String, calendarDay:String){
-        
-    }
-    
+   
 }
 
 class Professors {

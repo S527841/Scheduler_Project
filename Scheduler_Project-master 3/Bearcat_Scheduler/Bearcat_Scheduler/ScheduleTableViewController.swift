@@ -38,7 +38,7 @@ class ScheduleTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "event", for: indexPath)
         cell.textLabel?.text = professor.schedules[indexPath.row].dayOfWeek
-        cell.detailTextLabel?.text = professor.schedules[indexPath.row].calendarDay
+        cell.detailTextLabel?.text = String(professor.schedules[indexPath.row].calendarDay)
 
         return cell
     }
@@ -48,8 +48,8 @@ class ScheduleTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "newEventSegue" {
-            let newEventVC = segue.destination as! NewScheduleViewController
-            newEventVC.newSchedule = professor } else if segue.identifier == "eventDetails" {
+            let newEventVC = segue.destination as! NewDailyScheduleViewController
+            newEventVC.professor = professor } else if segue.identifier == "eventDetails" {
             let scheduleVC = segue.destination as! ScheduleViewController
             scheduleVC.chosenEvent = professor.schedules [(tableView.indexPathForSelectedRow?.row)!]
         

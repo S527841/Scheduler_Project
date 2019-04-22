@@ -9,7 +9,7 @@ import UIKit
 
 class ScheduleViewController: UIViewController {
 
-    var chosenEvent: Schedule!
+    var chosenEvent: DailySchedule!
     
     override func viewDidLoad() {
         super.viewDidLoad()
