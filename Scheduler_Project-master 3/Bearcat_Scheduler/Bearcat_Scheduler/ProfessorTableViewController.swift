@@ -29,13 +29,14 @@ class ProfessorTableViewController: UITableViewController {
     }
 
     
+    
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "professorCell", for: indexPath)
         cell.textLabel?.text = Professors.shared[indexPath.row].name
         cell.detailTextLabel?.text = "\(Professors.shared[indexPath.row].department)"
         return cell
     }
-    
     
     @IBAction func logout(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)

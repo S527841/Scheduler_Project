@@ -10,10 +10,10 @@ import Foundation
 class DailySchedule {
     
     var dayOfWeek:String!
-    var calendarDay:Int!
+    var calendarDay:String!
     var courses:[Course] = []
 
-    init(dayOfWeek:String, calendarDay:Int){
+    init(dayOfWeek:String, calendarDay:String){
         self.dayOfWeek = dayOfWeek
         self.calendarDay = calendarDay
     }

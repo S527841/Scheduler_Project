@@ -27,7 +27,7 @@ class NewDailyScheduleViewController: UIViewController {
             print("Bail!")
         } else {
             if dailySchedule == nil {
-                dailySchedule = DailySchedule(dayOfWeek: dayOfWeekTF.text!, calendarDay: Int(calendarDateTF.text!)!)
+                dailySchedule = DailySchedule(dayOfWeek: dayOfWeekTF.text!, calendarDay: calendarDateTF.text!)
                 professor.schedules.append(dailySchedule)
             }
             let course = Course(course: courseTF.text!, time: timeTF.text!, location: locationTF.text!)
