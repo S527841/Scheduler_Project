@@ -769,7 +769,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Professor Schedules" id="ciQ-Zp-tNv">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="yP9-0t-kra">
+                        <barButtonItem key="leftBarButtonItem" title="Exit" id="yP9-0t-kra">
                             <connections>
                                 <action selector="logout:" destination="NFB-cV-bRQ" id="fn1-wL-nay"/>
                             </connections>
