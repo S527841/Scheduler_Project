@@ -32,6 +32,18 @@ class NewDailyScheduleViewController: UIViewController {
             }
             let course = Course(course: courseTF.text!, time: timeTF.text!, location: locationTF.text!)
             professor.schedules.last!.addCourse(course: course)
+            
+            let alert = UIAlertController(title: "Success", message: "Event has been added successfully! Want to add another Event? Fill in the information and press add again!", preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+            
+            self.present(alert, animated: true)
+            
+            timeTF!.text = nil
+            courseTF!.text = nil
+            locationTF!.text = nil
+            dayOfWeekTF!.text = nil
+            calendarDateTF!.text = nil
         }
     }
     
