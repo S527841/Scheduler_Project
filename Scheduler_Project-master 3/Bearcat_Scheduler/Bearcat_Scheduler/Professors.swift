@@ -7,22 +7,6 @@
 
 import Foundation
 
-class DailySchedule {
-    
-    var dayOfWeek:String!
-    var calendarDay:String!
-    var courses:[Course] = []
-
-    init(dayOfWeek:String, calendarDay:String){
-        self.dayOfWeek = dayOfWeek
-        self.calendarDay = calendarDay
-    }
-    
-    func addCourse(course:Course){
-        courses.append(course)
-    }
-}
-
 class Course {
     
     var courseName:String
@@ -36,11 +20,33 @@ class Course {
     }
 }
 
+
+enum DayOfWeek:String {case Monday, Tuesday, Wednesday, Thursday, Friday}
+
+class DailySchedule {
+    
+    var dayOfWeek:DayOfWeek!
+    var courses:[Course] = []
+
+    init(dayOfWeek:DayOfWeek){
+        self.dayOfWeek = dayOfWeek
+    }
+    
+    func addCourse(course:Course){
+        courses.append(course)
+    }
+}
+
 class Professor {
     
     var name:String
     var department:String
-    var schedules:[DailySchedule] = []
+    var schedules:[DailySchedule] = [DailySchedule(dayOfWeek: .Monday),
+    DailySchedule(dayOfWeek: .Tuesday),
+    DailySchedule(dayOfWeek: .Wednesday),
+    DailySchedule(dayOfWeek: .Thursday),
+    DailySchedule(dayOfWeek: .Friday)
+    ]
     
     init(name:String, department:String){
         self.name = name
@@ -55,6 +61,9 @@ class Professors {
     private init() {}
     
     static var shared = Professors()
+    
+    var chosenProfessor:Professor!
+    var chosenDailySchedule:DailySchedule!
     
     private var professors:[Professor] = []
     

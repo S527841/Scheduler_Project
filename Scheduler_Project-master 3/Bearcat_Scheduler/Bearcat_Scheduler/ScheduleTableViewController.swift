@@ -1,68 +1,72 @@
 //
 //  ScheduleTableViewController.swift
-//  Bearcat_Scheduler
+//  NW Scheduler
 //
-//  Created by Hoskins,Andrew J on 3/19/19.
+//  Created by Michael Rogers on 4/26/19.
 //
 
 import UIKit
 
 class ScheduleTableViewController: UITableViewController {
-
+    
     
     var professor: Professor!
+    var chosenDay:DailySchedule!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
+        
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-    }
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return professor.schedules.count
-    }
-
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "event", for: indexPath)
-        cell.textLabel?.text = professor.schedules[indexPath.row].dayOfWeek
-        cell.detailTextLabel?.text = String(professor.schedules[indexPath.row].calendarDay)
-
-        return cell
     }
     
     override func viewWillAppear(_ animated: Bool) {
         tableView.reloadData()
     }
-   
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if (editingStyle == UITableViewCell.EditingStyle.delete) {
-            professor.schedules.remove(at: indexPath.row)
-            tableView.reloadData()
-        }
+    // MARK: - Table view data source
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "newEventSegue" {
-            let newEventVC = segue.destination as! NewDailyScheduleViewController
-            newEventVC.professor = professor } else if segue.identifier == "eventDetails" {
-            let scheduleVC = segue.destination as! ScheduleViewController
-            scheduleVC.chosenEvent = professor.schedules [(tableView.indexPathForSelectedRow?.row)!]
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return chosenDay.courses.count
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "courseCell", for: indexPath)
         
-        }
+        let nameLBL = cell.viewWithTag(100) as! UILabel
+        let timeLBL = cell.viewWithTag(200) as! UILabel
+        // Configure the cell...
+        let chosenCourse = chosenDay.courses[indexPath.row]
+        nameLBL.text = chosenCourse.courseName
+        timeLBL.text = chosenCourse.time
+        return cell
     }
     
-
+    
+    
+    
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        let newEventVC = segue.destination as! NewDailyScheduleViewController
+        newEventVC.professor = professor
+        newEventVC.chosenDay = chosenDay
+        
+    }
+    
+    
+    
+    
+    
 }

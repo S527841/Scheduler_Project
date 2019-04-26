@@ -42,10 +42,13 @@ class ProfessorTableViewController: UITableViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        Professors.shared.chosenProfessor = Professors.shared[indexPath.row]
+    }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "daySegue" {
-            let daysTVC = segue.destination as! ScheduleTableViewController
+            let daysTVC = segue.destination as! DaysOfWeekTableViewController
             daysTVC.professor = Professors.shared[tableView.indexPathForSelectedRow!.row]
         }
     }

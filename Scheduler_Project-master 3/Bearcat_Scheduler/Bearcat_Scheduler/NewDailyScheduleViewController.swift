@@ -10,8 +10,9 @@ import UIKit
 class NewDailyScheduleViewController: UIViewController {
     
     var professor:Professor!
-    var dailySchedule:DailySchedule!
-    
+    var chosenDay:DailySchedule!
+
+    var dayOfWeek:DayOfWeek!
     @IBOutlet weak var dayOfWeekTF: UITextField!
     @IBOutlet weak var calendarDateTF: UITextField!
     
@@ -26,12 +27,9 @@ class NewDailyScheduleViewController: UIViewController {
         if dayOfWeekTF.text!.isEmpty || timeTF.text!.isEmpty || courseTF.text!.isEmpty || locationTF.text!.isEmpty {
             print("Bail!")
         } else {
-            if dailySchedule == nil {
-                dailySchedule = DailySchedule(dayOfWeek: dayOfWeekTF.text!, calendarDay: calendarDateTF.text!)
-                professor.schedules.append(dailySchedule)
-            }
+            
             let course = Course(course: courseTF.text!, time: timeTF.text!, location: locationTF.text!)
-            professor.schedules.last!.addCourse(course: course)
+            chosenDay.addCourse(course: course)
             
             let alert = UIAlertController(title: "Success", message: "Event has been added successfully! Want to add another Event? Fill in the information and press add again!", preferredStyle: .alert)
             
