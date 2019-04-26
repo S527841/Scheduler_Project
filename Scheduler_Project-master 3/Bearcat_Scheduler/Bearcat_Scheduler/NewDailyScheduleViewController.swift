@@ -13,9 +13,6 @@ class NewDailyScheduleViewController: UIViewController {
     var chosenDay:DailySchedule!
 
     var dayOfWeek:DayOfWeek!
-    @IBOutlet weak var dayOfWeekTF: UITextField!
-    @IBOutlet weak var calendarDateTF: UITextField!
-    
     
     @IBOutlet weak var timeTF: UITextField!
     @IBOutlet weak var courseTF: UITextField!
@@ -24,7 +21,7 @@ class NewDailyScheduleViewController: UIViewController {
     
     @IBAction func addSchedule(_ sender: Any) {
         
-        if dayOfWeekTF.text!.isEmpty || timeTF.text!.isEmpty || courseTF.text!.isEmpty || locationTF.text!.isEmpty {
+        if timeTF.text!.isEmpty || courseTF.text!.isEmpty || locationTF.text!.isEmpty {
             print("Bail!")
         } else {
             
@@ -40,8 +37,6 @@ class NewDailyScheduleViewController: UIViewController {
             timeTF!.text = nil
             courseTF!.text = nil
             locationTF!.text = nil
-            dayOfWeekTF!.text = nil
-            calendarDateTF!.text = nil
         }
     }
     

@@ -43,10 +43,12 @@ class ScheduleTableViewController: UITableViewController {
         
         let nameLBL = cell.viewWithTag(100) as! UILabel
         let timeLBL = cell.viewWithTag(200) as! UILabel
+        let locationLBL = cell.viewWithTag(300) as! UILabel
         // Configure the cell...
         let chosenCourse = chosenDay.courses[indexPath.row]
         nameLBL.text = chosenCourse.courseName
         timeLBL.text = chosenCourse.time
+        locationLBL.text = chosenCourse.location
         return cell
     }
     
